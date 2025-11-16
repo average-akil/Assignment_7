@@ -3,8 +3,8 @@ import Header from "../Header/Header";
 const Hero = ({ setBalance }) => {
   const [click3, setClick3] = useState(0);
   return (
-    <div className="   bg-[url(../../../../assets/bg-shadow.png)] max-h-fullmax-w-full flex items-center justify-center flex-col gap-4 rounded-xl pt-5">
-      <img src="../../../../assets/banner-main.png" alt="" />
+    <div className="   bg-[url(/Assignment_7/assets/bg-shadow.png)] max-h-fullmax-w-full flex items-center justify-center flex-col gap-4 rounded-xl pt-5">
+      <img src={import.meta.env.BASE_URL + "assets/banner-main.png"} alt="" />
 
       <h1 className="text-4xl text-slate-800">
         Assemble Your Ultimate Dream 11 Cricket Team

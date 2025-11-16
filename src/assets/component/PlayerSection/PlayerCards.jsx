@@ -9,7 +9,7 @@ const PlayerCards = ({
   const [cards, setCards] = useState([]);
 
   useEffect(() => {
-    fetch("/Players.json")
+    fetch(import.meta.env.BASE_URL + "Players.json")
       .then((res) => res.json())
       .then((data) => setCards(data))
       .catch((err) => console.error("Error loading JSON:", err));
