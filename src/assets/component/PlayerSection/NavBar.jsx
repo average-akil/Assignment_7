@@ -18,7 +18,7 @@ const NavBar = ({ view, setView, selectedPlayers = [] }) => {
           }}
           className={`p-2   ${clicked ? "bg-[#E7FE29]" : "bg-[#FFFFFF]"}`}
         >
-          Available ()
+          Available 
         </button>
         <button
           onClick={() => {
