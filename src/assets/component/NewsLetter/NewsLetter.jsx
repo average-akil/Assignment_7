@@ -2,7 +2,7 @@ import React from "react";
 
 const NewsLetter = () => {
   return (
-    <div className="bg-[url(../../../../../assets/bg-shadow.png)] flex justify-center items-center flex-col gap-4 border-24 border-transparent rounded-2xl">
+    <div className="bg-[url(../../../../public/bg-shadow.png)] flex justify-center items-center flex-col gap-4 border-24 border-transparent rounded-2xl">
       <h1 className="text-2xl text-black font-bold"> Subscribe to our Newsletter</h1>
       <h2 className="text-slate-300">
         Get the latest updates and news right in your inbox!

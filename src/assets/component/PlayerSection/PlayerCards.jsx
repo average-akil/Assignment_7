@@ -17,8 +17,7 @@ const PlayerCards = ({
 
   return (
     <div>
-    
-      <div className="text-4xl lg:grid lg:grid-cols-3 lg:gap-4 md:grid md:grid-cols-2 md:gap-3 flex flex-col justify-center items-center gap-3 ">
+      <div className="text-4xl lg:grid lg:grid-cols-3 lg:place-items-center lg:gap-4 md:grid md:grid-cols-2 md:gap-3 md:place-items-center flex flex-col justify-center items-center gap-3  ">
         {cards.map((card) => (
           <PlayerCard
             key={card.id}

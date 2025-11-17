@@ -6,7 +6,7 @@ const Footer = () => {
       <div className="flex justify-center items-center ">
         <img src="../../../../assets/logo-footer.png" alt="" />
       </div>
-      <div className="lg:flex lg:justify-between container mx-auto lg:px-16 md:px-8 px-8 md:flex md:flex-col md:justify-center md:items-center sm:flex sm:flex-col sm:justify-center sm:items-center  ">
+      <div className="flex flex-col justify-between items-center lg:flex-row md:flex-row  container mx-auto lg:px-16 md:px-8 pb-12 ">
         <div className="space-y-2">
           {/* about us */}
           <h1 className="font-bold">About Us</h1>

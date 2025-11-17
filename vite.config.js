@@ -6,16 +6,11 @@ import tailwindcss from '@tailwindcss/vite';
 
 
 export default defineConfig({
-  base: "/Assignment_7/",
+  base: "/",
 
   plugins: [
     react(),
     tailwindcss(),
-    {
-      daisyui: {
-        themes: ['light'],
-      },
-    },
   ],
 
 });

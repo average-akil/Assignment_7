@@ -20,7 +20,9 @@ function App() {
     const alreadySelected = ids.has(card.id);
 
     if (alreadySelected === false) {
-      setSelectedPlayers([...selectedPlayers, card]);
+      if (balance > card.price) {
+        setSelectedPlayers([...selectedPlayers, card]);
+      } 
     } else {
       alert("Already Added");
     }
@@ -31,7 +33,7 @@ function App() {
       const player = prev.find((p) => p.id === id);
 
       if (player) {
-        setBalance(balance + (Number(player.price) ));
+        setBalance(balance + Number(player.price));
       }
 
       return prev.filter((p) => p.id !== id);
