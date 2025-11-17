@@ -6,7 +6,7 @@ import tailwindcss from '@tailwindcss/vite';
 
 
 export default defineConfig({
-  base: "/",
+ base: "/Assignment_7/",
 
   plugins: [
     react(),

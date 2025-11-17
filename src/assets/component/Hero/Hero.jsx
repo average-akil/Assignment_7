@@ -1,9 +1,10 @@
 import React, { useState } from "react";
 import Header from "../Header/Header";
+import img from "../../../../assets/bg-shadow.png"
 const Hero = ({ setBalance }) => {
   const [click3, setClick3] = useState(0);
   return (
-    <div className="bg-[url(../../../../public/bg-shadow.png)]  flex justify-center items-center flex-col gap-4  rounded-2xl pt-12 pb-12 mx-auto">
+    <div className="bg-[url('/bg-shadow.png')]  flex justify-center items-center flex-col gap-4  rounded-2xl pt-12 pb-12 mx-auto">
      
 
       <h1 className="text-4xl text-slate-800">

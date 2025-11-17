@@ -1,67 +1,50 @@
 import React from "react";
+import logo from "../../../../assets/logo.png";
+import dot from "../../../../assets/0.png";
 
 const Footer = () => {
   return (
-    <div className="pt-48 bg-[040D11]">
-      <div className="flex justify-center items-center ">
-        <img src="../../../../assets/logo-footer.png" alt="" />
+    <footer className="pt-48 bg-[#040D11] text-white ">
+      {/* Logo */}
+      <div className="flex justify-center items-center mb-8">
+        <img src={logo} alt="Logo" className="h-16" />
       </div>
-      <div className="flex flex-col justify-between items-center lg:flex-row md:flex-row  container mx-auto lg:px-16 md:px-8 pb-12 ">
-        <div className="space-y-2">
-          {/* about us */}
-          <h1 className="font-bold">About Us</h1>
-          <p className="text-xs text-slate-500">
+
+      {/* Main content */}
+      <div className="container mx-auto flex flex-col gap-12 lg:flex-row lg:justify-between lg:items-center pb-12 ">
+        
+        {/* About Us */}
+        <div>
+          <h1 className="font-bold mb-2">About Us</h1>
+          <p className="text-xs text-slate-400">
             We are a passionate team <br />
             dedicated to providing the best <br />
             services to our customers.
           </p>
         </div>
-        <div className="space-y-2">
-          <h1 className="font bold">Quick Links</h1>
-          <div className="pl-4 flex items-center gap-2">
-            <img
-              className="h-0.5 w-0.5"
-              src="../../../../assets/0.png"
-              alt=""
-            />
-            <h1 className="text-slate-600 text-xs">Home</h1>
-          </div>
-          <div className="pl-4 flex items-center gap-2">
-            <img
-              className="h-0.5 w-0.5"
-              src="../../../../assets/0.png"
-              alt=""
-            />
-            <h1 className="text-slate-600 text-xs">Services</h1>
-          </div>
-          <div className="pl-4 flex items-center gap-2">
-            <img
-              className="h-0.5 w-0.5"
-              src="../../../../assets/0.png"
-              alt=""
-            />
-            <h1 className="text-slate-600 text-xs">About</h1>
-          </div>
-          <div className="pl-4 flex items-center gap-2">
-            <img
-              className="h-0.5 w-0.5"
-              src="../../../../assets/0.png"
-              alt=""
-            />
-            <h1 className="text-slate-600 text-xs">Contact</h1>
-          </div>
+
+        {/* Quick Links */}
+        <div>
+          <h1 className="font-bold mb-2">Quick Links</h1>
+          <ul className="space-y-2 text-xs text-slate-400">
+            <li>Home</li>
+            <li>Services</li>
+            <li>About</li>
+            <li>Contact</li>
+          </ul>
         </div>
 
-        <div className="space-y-2">
-          <h1>Subscribe</h1>
-          <p className="text-xs text-slate-600">
+        {/* Subscribe */}
+        <div>
+          <h1 className="font-bold mb-2">Subscribe</h1>
+          <p className="text-xs text-slate-400 mb-3">
             Subscribe to our newsletter for the latest updates.
           </p>
-          <div className="flex flex-col sm:flex-row items-center gap-3 max-w-md mx-auto bg-white rounded-2xl text-slate-400">
+          <div className="flex flex-col sm:flex-row items-center gap-3 max-w-md bg-white rounded-2xl p-2">
             <input
               type="email"
               placeholder="Enter your email"
-              className="flex-1 px-3 py-2 rounded focus:outline-none focus:ring-2 focus:ring-orange-400"
+              className="flex-1 px-3 py-2 rounded focus:outline-none focus:ring-2 focus:ring-orange-400 text-black"
             />
             <button className="bg-gradient-to-r from-orange-500 to-pink-500 text-white font-semibold px-4 py-2 rounded-2xl hover:opacity-90">
               Subscribe
@@ -69,7 +52,7 @@ const Footer = () => {
           </div>
         </div>
       </div>
-    </div>
+    </footer>
   );
 };
 
