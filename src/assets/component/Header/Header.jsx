@@ -5,7 +5,7 @@ const Header = ({balance}) => {
   return (
     <div className="flex justify-between">
       <div>
-        <img src="./../../../public/logo.png" alt="Logo" />
+        <img src="../../../../public/logo.png" alt="Logo" />
       </div>
       <div className="max-w-2/5 lg:flex lg:gap-4 lg:items-center md:flex md:gap-4 md:items-center flex items-center justify-center" >
         <button className= " text-slate-500 hover:text-black hover:border-1 hover:border-gray-300 hover:rounded-xl hover:p-2">Home</button>
